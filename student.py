@@ -1,20 +1,8 @@
-class Student:
-    ...
-    
-    
 
-def main():
+student=[]
+with open("C:\Users\KIIT\Documents\Practice\python\student1.csv")as file:
+    for line in file:
+        student.append(line.rstrip())
 
-    student = get_student()
-    if student["name"] == "Padma":
-        student["house"] = "ravenclaw"
-    print(f"{student['name']} from {student['house']}")
-
-def get_student():
-    student = Student()
-    student ["name"] = input("Name: ")
-    student ["house"] = input("House: ")
-    return student
-
-if __name__=="__main__":
-    main()
+for i in sorted(student,reverse=True):
+    print(f"hello,{student}")
