@@ -1,5 +1,5 @@
 // writing the program for the problem.
-#incllude<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 void Sort_color(vector<int>&nums){
     int zero=0,one=0,two=0;
